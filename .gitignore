@@ -1,0 +1,7 @@
+.DS_Store
+target/
+.ensime*
+credentials.conf
+/.idea*
+*.iml
+src/universal/application.conf
