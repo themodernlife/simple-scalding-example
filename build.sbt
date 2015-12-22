@@ -10,9 +10,10 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.twitter" %% "scalding-core" % "0.15.0" exclude("com.esotericsoftware.minlog", "minlog"),
+  "com.twitter" %% "scalding-core" % "0.15.1-SNAPSHOT" exclude("com.esotericsoftware.minlog", "minlog"),
   "org.apache.hadoop" % "hadoop-client" % "2.2.0" % "provided",
-  "org.slf4j" % "slf4j-log4j12" % "1.7.13" % "provided"
+  "org.slf4j" % "slf4j-log4j12" % "1.7.13" % "provided",
+  "org.apache.flink" % "flink-clients_2.11" % "0.10.1" % "provided" intransitive()
 )
 
 
